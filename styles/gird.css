@@ -67,4 +67,19 @@ background: #ffd8a8;
   min-height: 250px; 
   
 }
-  
+
+@media (max-width: 768px) {
+  .container {
+    grid-template-areas:
+      "header"
+      "main"
+      "aside"
+      "footer";
+
+    grid-template-columns: 1fr;
+  }
+
+  .aside {
+    width: 100%;
+  }
+}
